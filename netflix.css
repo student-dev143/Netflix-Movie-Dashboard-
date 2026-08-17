@@ -5,8 +5,8 @@
 }
 
 body{
-    background-color: red;
-    /* background: #0B0B0B; */
+   
+    background: #0B0B0B;
  overflow-x: hidden;
  
 
@@ -32,7 +32,7 @@ body{
 }
 input{
     margin-top: 2vh;
-    padding: 5px;
+    padding: 8px;
          color: white !important;
     border-radius: 5px;
     background-color: transparent;
@@ -57,7 +57,7 @@ h1{
 h4{
     font-size: 1rem;
     margin-left: 30vw;
-    color: white;
+    color:#888888;
 }
 
 .side-bar{
@@ -79,15 +79,15 @@ h4{
 }
 #search{
     width: 9vw;
-  background: #E50914;
+  background: #D72638;
 color: white;
 border: none;
-padding: 0.29vw;
+padding: 8px;
 border-radius: 5px;
 }
 
 #search:hover{
-    background: #FF1F1F;
+    background: #E63946;
 }
 
 #top-rated{
@@ -96,7 +96,7 @@ border-radius: 5px;
     padding: 5px;
    height: 10vh;
       background: transparent;
-color: red;
+color:#D72638;
 }
 #fav{
     border: none;
@@ -104,12 +104,12 @@ color: red;
     padding: 5px;
      height: 10vh;
       background: transparent;
-color: red;
+color: #D72638;
 }
 #home{
      height: 10vh;
       background: transparent;
-color: red;
+color: #D72638;
 font-size: 1.25rem;
     border: none;
     padding: 5px;
@@ -126,6 +126,10 @@ font-size: 1.25rem;
 #top-rated:hover{
     background:#651818;
     color: white;
+}
+#select{
+    padding: 6px;
+    border-radius: 5px;
 }
 .container1{
     /* margin-top: 1vh; */
@@ -157,7 +161,7 @@ border-radius: 10px;
 border: 1px solid #2B2B2B;
  transition: all 0.3s ease;
     cursor: pointer;
-    border: 1px solid #2f2f2f;
+    border: 1px solid #3A2427;
 }
 
 .box1:hover,
@@ -303,5 +307,261 @@ i{
   color: red;
 }
 .ri-poker-hearts-fill{
-    color: red;
+    color: #D72638;
+}
+.ri-menu-line{
+    display: none;
+}
+@media (max-width:480px) {
+    .top-bar{
+                                height: 108px;
+                    width: 100%;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+}
+#logo{
+        position: relative;
+               top: 13px;
+             left: 3px;
+        color: #a1070f;
+        font-size: 2rem;
+}
+#header{
+                margin-top: 4vh;
+                       margin-left: 22px;
+}
+input{
+           margin-top: 20px;
+        padding: 7px;
+            width: 125px;
+        color: white !important;
+        border-radius: 2px;
+}
+#search{
+    padding: 6px;
+        width: 54px;
+        border-radius: 3px;
+}
+ #select{
+    width: 47px;
+        padding: 3px;
+ }
+ .ri-menu-line{
+    display: flex;
+}
+ .side-bar{
+    display: none;
+ }
+ .side-bar.active{
+            display: flex;
+        justify-content: center;
+        flex-direction: column;
+                gap: 88px;
+        min-height: 88vh;
+        width: 49vw;
+        border-radius: 6px;
+        text-align: center;
+        position: fixed;
+        z-index: 9999;
+        top: 112px;
+        left: 4px;
+        background-color:#111 ;
+  
+
+ }
+ .top-rated{
+    border: none;
+   font-size: 1.25rem;
+    padding: 5px;
+   height: 10vh;
+      background: transparent;
+color: red;
+}
+.fav{
+    border: none;
+    font-size: 1.25rem;
+    padding: 5px;
+     height: 10vh;
+      background: transparent;
+color: red;
+}
+.home{
+     height: 10vh;
+      background: transparent;
+color: red;
+font-size: 1.25rem;
+    border: none;
+    padding: 5px;
+    
+}
+.home:hover{
+    background: #651818;
+    color: white;
+}
+.fav:hover{
+    background: #651818;
+    color: white;
+}
+.top-rated:hover{
+    background:#651818;
+    color: white;
+}
+.ri-menu-line{
+          color: red;
+        margin-left: -34px;
+        font-size: 2rem;
+        margin-top: -9px;
+ }
+ /* ===== MOVIE CONTAINER - 480px ===== */
+
+.container1{
+            width: 100%;
+    height: auto;
+    min-height: 0;
+}
+
+.container{
+    width: 100%;
+    min-height: 0;
+    padding: 12px 8px 20px;
+}
+
+h1{
+    font-size: 1.5rem;
+    margin: 8px 0 0;
+    text-align: center;
+}
+
+h4{
+    font-size: 0.85rem;
+    margin: 5px 0 15px;
+    text-align: center;
+}
+
+.boxes{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/* ALL MOVIE CARDS */
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9,
+.box10{
+           width: 100%;
+        max-width: 85%;
+        height: 300px;
+        margin: 0;
+        padding: 6px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 10px;
+        border-radius: 10px;
+}
+
+/* MOVIE IMAGE */
+.box1 img,
+.box2 img,
+.box3 img,
+.box4 img,
+.box5 img,
+.box6 img,
+.box7 img,
+.box8 img,
+.box9 img,
+.box10 img{
+    display: block;
+    width: 100%;
+    height: 190px;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+}
+
+/* MOVIE TITLE */
+.box1 h5,
+.box2 h5,
+.box3 h5,
+.box4 h5,
+.box5 h5,
+.box6 h5,
+.box7 h5,
+.box8 h5,
+.box9 h5,
+.box10 h5{
+    width: 100%;
+    margin: 7px 0 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: white;
+}
+
+/* GENRE */
+.box1 .spn,
+.box2 .spn,
+.box3 .spn,
+.box4 .spn,
+.box5 .spn,
+.box6 .spn,
+.box7 .spn,
+.box8 .spn,
+.box9 .spn,
+.box10 .spn{
+    position: static;
+    display: block;
+    width: fit-content;
+    max-width: 90%;
+    margin: 6px auto 0;
+    padding: 3px 7px;
+    font-size: 8px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* RATING */
+.box1 h6,
+.box2 h6,
+.box3 h6,
+.box4 h6,
+.box5 h6,
+.box6 h6,
+.box7 h6,
+.box8 h6,
+.box9 h6,
+.box10 h6{
+    margin: 7px 0 0;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+/* HEART */
+.box1 i,
+.box2 i,
+.box3 i,
+.box4 i,
+.box5 i,
+.box6 i,
+.box7 i,
+.box8 i,
+.box9 i,
+.box10 i{
+    position: absolute;
+    left: 10px;
+    bottom: 12px;
+    margin: 0;
+    font-size: 1rem;
+}
 }

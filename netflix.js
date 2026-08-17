@@ -9,9 +9,13 @@ let fav = document.querySelector("#fav")
 let fill = document.querySelector(".ri-poker-hearts-fill")
 let select = document.querySelector("#select")
 let home = document.querySelector("#home")
+let menu = document.querySelector(".ri-menu-line")
+let sideBar = document.querySelector(".side-bar")
 
 
-
+menu.addEventListener("click",()=>{
+   sideBar.classList.toggle("active")
+})
 
 let array = [
     {
